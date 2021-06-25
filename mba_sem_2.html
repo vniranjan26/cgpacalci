@@ -1,0 +1,254 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script data-ad-client="ca-pub-2170462753040638" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<title>MBA Sem-2</title>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.text 
+{
+  text-align: center;
+  
+}
+}
+</style>
+
+</head>
+
+<div class="navbar">
+  <a href="mba.html">Back</a> 
+  <a href="index.html">Home</a>
+  <a href="#">Contact US</a> 
+  <a href="#">FAQ</a> 
+</div>
+<div class="text">
+
+<p><h2>                                               Enter Grade In Capital Letters <b>OR</b> Grade weightage</h2></p>
+<p><h4>                                               EG: O,A+,B <b>OR</b> O<b>-></b>10,  A+<b>-></b>9,  B<b>-></b>6</h4></p>
+</div>
+<CENTER>
+<FORM Name="GPACalcForm">
+<TABLE BORDER=5 BGCOLOR=#C0C0C0 CELLPADDING="5" 
+CELLSPACING="2">
+<TH></TH>
+<TH>Grade</TH>
+<TH>Credits</TH>
+<TR>
+<TD>FIN 501</TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR1" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR1" ALIGN=TOP 
+MAXLENGTH=5  ></TD>
+</TR>
+<TR>
+<TD>HRM 501</TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR2" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR2" ALIGN=TOP 
+MAXLENGTH=5 ></TD>
+</TR>
+<TR>
+<TD>MGN 504</TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR3" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR3" ALIGN=TOP 
+MAXLENGTH=5 ></TD>
+</TR>
+<TR>
+<TD>MGN 514</TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR4" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR4" ALIGN=TOP 
+MAXLENGTH=5 ></TD>
+</TR>
+<TR>
+<TD>MKT 501</TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR5" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR5" ALIGN=TOP 
+MAXLENGTH=5  ></TD>
+</TR>
+<TR>
+<TD>PEA 516</TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR6" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR6" ALIGN=TOP 
+MAXLENGTH=5 ></TD>
+</TR>
+<TR>
+<TD>PEL 533</TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR7" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR7" ALIGN=TOP 
+MAXLENGTH=5 ></TD>
+</TR>
+<TR>
+<TD>PES 503</TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR8" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR8" ALIGN=TOP 
+MAXLENGTH=5 ></TD>
+</TR>
+<!---<TR>
+<TD>PEV 106</TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR9" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR9" ALIGN=TOP 
+MAXLENGTH=5 value="3"></TD>
+</TR>--->
+<TR ALIGN=CENTER>
+<TD COLSPAN=3><INPUT TYPE="BUTTON" VALUE="Calculate" 
+NAME="CalcButton"
+OnClick="gpacalc()">
+</TD>
+</TR>
+
+</TABLE>
+
+</FORM>
+<BR>
+<P>
+
+<P>
+  
+</CENTER>
+
+<BR>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- 
+function gpacalc()
+{
+//define valid grades and their values
+var gr = new Array(8);
+var nr = new Array(8); 
+var cr = new Array(8);
+var ingr = new Array(5);
+var incr = new Array(5);
+
+// define valid grades and their values
+var grcount = 11; 
+gr[0] = "O";
+nr[0] = 10;
+cr[0] = 10;
+gr[1] = "A+"; 
+nr[1] = 9;
+cr[1] = 9; 
+gr[2] = "A";
+nr[2] = 8;
+cr[2] = 8;
+gr[3] = "B+";
+nr[3] = 7;
+cr[3] = 7;
+gr[4] = "B";
+cr[4] = 6;
+nr[4] = 6;
+gr[5] = "C";
+cr[5] = 5;
+nr[5] = 5;
+gr[6] = "D";
+nr[6] = 4;
+cr[6] = 4;
+gr[7] = "E";
+nr[7] = 0;
+cr[7] = 0;
+// retrieve user input
+ingr[0] = document.GPACalcForm.GR1.value;
+ingr[1] = document.GPACalcForm.GR2.value;
+ingr[2] = document.GPACalcForm.GR3.value;
+ingr[3] = document.GPACalcForm.GR4.value;
+ingr[4] = document.GPACalcForm.GR5.value;
+ingr[5] = document.GPACalcForm.GR6.value;
+ingr[6] = document.GPACalcForm.GR7.value;
+ingr[7] = document.GPACalcForm.GR8.value;
+/*ingr[8] = document.GPACalcForm.GR9.value;*/
+incr[0] = document.GPACalcForm.CR1.value;
+incr[1] = document.GPACalcForm.CR2.value;
+incr[2] = document.GPACalcForm.CR3.value;
+incr[3] = document.GPACalcForm.CR4.value;
+incr[4] = document.GPACalcForm.CR5.value;
+incr[5] = document.GPACalcForm.CR6.value;
+incr[6] = document.GPACalcForm.CR7.value;
+incr[7] = document.GPACalcForm.CR8.value;
+/*incr[8] = document.GPACalcForm.CR9.value;*/
+
+// Calculate GPA
+var allgr =0;
+var allcr = 0;
+var gpa = 0;
+for (var x = 0; x < 9 ; x++)
+  {
+        if (ingr[x] == "") break;
+//      if (isNaN(parseInt(incr[x]))) alert("Error- You did not enter a numeric  credits value for Class If the class is worth 0 credits then enter the number 0 in  the field."); 
+        var validgrcheck = 0;
+        for (var xx = 0; xx < 8; xx++)
+                {
+                if (ingr[x] == gr[xx] || ingr[x] == nr[xx]  )
+                        {
+                        allgr = allgr + (parseInt(incr[x]) * cr[xx]);
+                        allcr = allcr + parseInt(incr[x]);
+                        validgrcheck = 1;
+                        break;
+                        }
+                }
+        /*if (validgrcheck == 0)
+                {
+                alert("Error- Could not recognize the grade entered for Class " + eval(x +  1) + ". Please use standard college grades in the form of A A- B+ ...F.");
+                return 0;
+                }*/
+        }
+
+// this if-check prevents a divide by zero error
+if (allcr == 0)
+        {
+        alert("Error- You did not enter any credit values! GPA = N/A");
+        return 0;
+        }
+
+gpa = allgr / allcr;
+
+alert("CGPA =  " + eval(gpa));
+
+return 0;
+}
+
+//-->
+    
+</SCRIPT>
+
+<p align="center"><font face="arial" size="-2">For Lovely Professional University.</font><br>
+<font face="arial, helvetica" size="-2">Developed By<a href="https://www.linkedin.com/in/vaibhavpatel24/">Vaibhav Patel</a></font></p>
+
+
+</html>
+
+
+
